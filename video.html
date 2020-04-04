@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>video gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Caveat|Bad+Script|PT+Sans+Caption|Faster+One|Alats|IM+Fell+English+SC|Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/youtubegallerywall.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/youtubegallerywall.js"></script>
+    <script>
+        jQuery(function() {
+            $('#youtubelist').youtubegallery()
+        })
+
+    </script>
+</head>
+<style>
+    .port img {
+        width: 210px;
+        filter: grayscale(100%);
+        transition: 1s;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .port img:hover {
+        filter: grayscale(0);
+        transform: scale(1.2);
+    }
+
+    .switch {
+        color: #f2f2f2;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+</style>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+</script>
+
+<body>
+    <div class="header">
+        <div id="main">
+            <span style="font-size:32px;cursor:pointer" onclick="openNav()"><b style="color: white">&#9776;</b>&nbsp;&nbsp;<b style="color: #0e3562">Creativefingers</b></span>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About%20Me.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </div>
+    <div class="headerHold"></div>
+    <section><br><br><br>
+        <h1 class="mport" style="color:#bb72db">&nbsp;My Videos</h1>
+        <br>
+        <div class="vidFrame">
+            <ul id="youtubelist">
+                <li><a href="https://youtu.be/ETVdBIuGSzw">Super Power</a></li>
+                <li><a href="https://youtu.be/AoRbB6XtnSQ">Water-Mill</a></li>
+                <li><a href="https://youtu.be/bqPPLrXHAgI">Punctulity</a></li>
+
+                <li><a href="https://youtu.be/po2BRE7R-A8">Smart Solution</a></li>
+                <li><a href="https://www.youtube.com/watch?v=wXplvsK04QE">Mr.President wishing a happy new year</a></li>
+                <li><a href="https://youtu.be/fTfZa_DjSEU">Listening to your body</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <br>
+        <hr>
+        <br>
+        <table class="lowerT">
+            <tr>
+                <th>Branding</th>
+                <th>Graphic Design</th>
+                <th>Web Design</th>
+            </tr>
+            <tr>
+                <td style="padding:20px">Branding is absolutely critical to a business because of the overall impact it makes on your company. Branding can change how people perceive your brand, it can drive new business and increase brand awareness.This helps to identify what you sell, and distinguish it from other products and services. It helps get recognition, increase business value, generate new customers, enhance employee pride and satisfaction, create trust within the marketplace and support advertising. </td>
+                <td style="padding:20px">Graphic design is important to businesses and our everyday lives in many ways. Businesses need the services of graphic designers to create impressive marketing materials for today’s competitive business environment for we always have more and more businesses entering the markets. Graphic design has become a part of the business in physical and virtual markets. A reason for businesses increasingly demanding more graphic design items is the need for effective communication with the audience. </td>
+                <td style="padding:20px">A website is very important for marketing extends to every aspect of your digital marketing strategy. As the backbone of your online presence, every type of communication, piece of content, or advertisement that you put online will drive the consumer back to your website. A website gives consumers a clear idea of what your brand is about and what types of products or services you offer.Your website is the perfect place to house all of the great content your business creates to inform and engage your target audience. </td>
+            </tr>
+        </table>
+        <p style="font-family:'Alatsi', sans-serif" ; align="center" ;><a href="#">Back to Top</a></p><br>
+        <br>
+    </section>
+    <footer>
+        <br>
+        <div class="social-icons">
+            <a href="http://www.facebook.com"><img src="social-icons/facebook.png"></a>
+            <a href="http://www.twitter.com"><img src="social-icons/twitter.png"></a>
+            <a href="http://www.pinterest.com"><img src="social-icons/pinterest.png"></a>
+            <a href="http://www.instagram.com"><img src="social-icons/instagram.png"></a>
+            <a href="https://www.linkedin.com/in/dale-lama-3615b6126/"><img src="social-icons/linkedIn.png"></a>
+            <a href="http://www.snapchat.com"><img src="social-icons/snapchat.png"></a>
+        </div>
+        <br>
+        <p>Copyright © 2019 CreativeFingers. All rights reserved</p>
+    </footer>
+
+
+</body>
+
+</html>
